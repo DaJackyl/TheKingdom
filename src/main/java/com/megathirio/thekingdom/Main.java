@@ -20,18 +20,17 @@ public class Main {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-        System.out.println("Called method: preInit");
+        proxy.preInit(e);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         System.out.println("Called method: init");
-
+        proxy.init(e);
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
-        System.out.println("Called method: postInit");
-
+        proxy.postInit(e);
     }
 }
